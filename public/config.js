@@ -18,7 +18,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",
   "VITE_ENABLED_MENUS": "Trading,Portfolio,Markets,Leaderboard",
-  "VITE_CUSTOM_MENUS": "GITHUB, https://github.com/4liquid-dev/4Liquid-DEX-; X, https://x.com/4liquidapp",
+  "VITE_CUSTOM_MENUS": "GITHUB, https://github.com/4liquid-dev/4Liquid-DEX-; X, https://x.com/4liquidapp; DEX, https://dexscreener.com/bsc/0x5ad81a43bfeba2bb2cf783a74c11af1bc9294444:4meme",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "",
   "VITE_DISCORD_URL": "",
