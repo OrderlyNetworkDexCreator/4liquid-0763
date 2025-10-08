@@ -52,30 +52,30 @@
   --oui-color-trading-profit: 0 200 83;
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* gradients */
-  --oui-gradient-primary-start: 94 129 162;
-  --oui-gradient-primary-end: 132 146 166;
+ /* Binance full yellow gradients */
+  --oui-gradient-primary-start: 243 186 47;
+  --oui-gradient-primary-end: 255 209 70;
 
-  --oui-gradient-secondary-start: 81 42 121;
-  --oui-gradient-secondary-end: 176 132 233;
+  --oui-gradient-secondary-start: 243 186 47;
+  --oui-gradient-secondary-end: 255 209 70;
 
-  --oui-gradient-success-start: 1 83 68;
-  --oui-gradient-success-end: 41 223 169;
+  --oui-gradient-success-start: 243 186 47;
+  --oui-gradient-success-end: 255 209 70;
 
-  --oui-gradient-danger-start: 153 24 76;
-  --oui-gradient-danger-end: 245 97 139;
+  --oui-gradient-danger-start: 243 186 47;
+  --oui-gradient-danger-end: 255 209 70;
 
-  --oui-gradient-brand-start: 231 219 249;
-  --oui-gradient-brand-end: 159 107 225;
-  --oui-gradient-brand-stop-start: 6.62%;
-  --oui-gradient-brand-stop-end: 86.5%;
-  --oui-gradient-brand-angle: 17.44deg;
+  --oui-gradient-brand-start: 243 186 47;   /* Giallo Binance */
+  --oui-gradient-brand-end: 255 209 70;    /* Giallo più chiaro per glow */
+  --oui-gradient-brand-stop-start: 0%;
+  --oui-gradient-brand-stop-end: 100%;
+  --oui-gradient-brand-angle: 90deg;
 
-  --oui-gradient-warning-start: 152 58 8;
+  --oui-gradient-warning-start: 243 186 47;
   --oui-gradient-warning-end: 255 209 70;
 
-  --oui-gradient-neutral-start: 27 29 24;
-  --oui-gradient-neutral-end: 38 41 46;
+  --oui-gradient-neutral-start: 243 186 47;
+  --oui-gradient-neutral-end: 255 209 70;
 
   /* rounded */
   --oui-rounded-sm: 2px;
@@ -95,6 +95,56 @@
 }
 
 html, body {
-  font-family: 'Manrope', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 16px !important;
+}
+
+.oui-neon {
+  text-shadow: 0 0 4px rgba(0, 200, 255, 0.7);
+}
+
+
+
+/* -------------------------------------------------
+   🌈 BUTTONS
+------------------------------------------------- */
+.oui-button {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  background: rgb(var(--oui-color-primary));
+  color: rgb(var(--oui-color-primary-contrast));
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.oui-button:hover {
+  background: rgb(var(--oui-color-primary-light));
+}
+.oui-button:active { transform: scale(0.95); }
+.oui-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* -------------------------------------------------
+   📊 CARDS / BOXES
+------------------------------------------------- */
+.parent {
+  perspective: 1500px; /* quasi piatto */
+}
+
+.oui-box {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.oui-box:hover {
+  transform: scale(1.002); /* appena percettibile */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* ombra leggerissima */
+}
+/* -------------------------------------------------
+   🚫 FOOTER
+------------------------------------------------- */
+.oui-scaffold-footer-powered-by {
+  display: none !important;
 }
